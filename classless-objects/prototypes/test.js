@@ -1,0 +1,11 @@
+export const figure = {
+    getType: function () {
+        return this.type ? this.type : "unknown";
+    }
+};
+
+export let circle = {
+    type: "circle",
+    center: { x: 0, y: 0 },
+    radius: 100
+};
