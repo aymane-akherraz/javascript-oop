@@ -24,7 +24,7 @@ console.log(ipParts[0]); // -> 127
 // Replacing substrings
 
 let text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam.";
-let words = text.toLowerCase().replaceAll('.','').replaceAll(',','').split(' ');
+let words = text.toLowerCase().replaceAll('.', '').replaceAll(',', '').split(' ');
 console.log(words.length); // -> 30
 console.log(words);
 
@@ -42,7 +42,7 @@ console.log(text.lastIndexOf("two")); // -> 22
 // Copying substrings
 
 text = "One, two, three, one, two, three.";
-console.log(text.substr(0,8)); // -> One, two
+console.log(text.substr(0, 8)); // -> One, two
 console.log(text.substr(10)); // -> three, one, two, three.
 console.log(text.substr(-6)); // -> three.
 console.log(text.substr(-6, 2)); // -> th
@@ -51,7 +51,7 @@ console.log(text.substring(5, 8)); // -> two
 console.log(text.substring(5)); // -> two, three, one, two, three.
 console.log(text.substring(-11, 8)); // -> One, two
 
-console.log(text.slice(0,3)); // -> One
+console.log(text.slice(0, 3)); // -> One
 console.log(text.slice(5)); // -> two, three, one, two, three.
 console.log(text.slice(-11)); // -> two, three.
 console.log(text.slice(-11, -8)); // -> two
@@ -60,7 +60,7 @@ console.log(text.slice(-11, -8)); // -> two
 // Padding
 
 let numbers = [100, 5, 66];
-for(let i=0; i< numbers.length; i++) {
+for (let i = 0; i < numbers.length; i++) {
     console.log(String(numbers[i]).padStart(10, '0'));
     console.log(String(numbers[i]).padStart(10, 'abc'));
     console.log(String(numbers[i]).padStart(10));
